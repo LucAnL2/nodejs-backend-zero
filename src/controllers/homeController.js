@@ -1,5 +1,6 @@
+const connection = require("../config/database");
 const getHomePage = (req, res) => {
-  res.send("Welcome to the Home Page!");
+  return res.render("home.ejs");
 };
 const getSamplePage = (req, res) => {
   res.render("sample.ejs");
